@@ -3,7 +3,7 @@
 		by Sheppard's voting scheme method
 ]]--
 function Utils.MatrixToQuaternionSheppard( cf )
-	local tx, ty, tz, xx, yx, zx, xy, yy, zy, xz, yz, zz = cf:components()
+	local _, _, _, xx, yx, zx, xy, yy, zy, xz, yz, zz = cf:components()
 	local tr = xx + yy + zz
 	local qx,qy,qz,qw = 0,0,0,1
 	local qv = nil
